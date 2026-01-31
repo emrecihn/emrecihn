@@ -1,0 +1,7 @@
+{
+  "name": "heybeli-store",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ]
+}
