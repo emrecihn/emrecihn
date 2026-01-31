@@ -13,10 +13,20 @@
     />
   </head>
   <body>
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <span>💬 Hızlı teklif hattı</span>
+        <span>🕒 Hafta içi 09:00 - 18:00</span>
+        <a href="mailto:merhaba@odsan.com">merhaba@odsan.com</a>
+      </div>
+    </div>
+
     <header class="site-header">
       <div class="container header-content">
         <div class="brand">
-          <span class="brand-mark">O</span>
+          <div class="brand-logo">
+            <span class="brand-mark">O</span>
+          </div>
           <div>
             <p class="brand-name">Odsan Elektronik</p>
             <p class="brand-tagline">Hızlı iletişim</p>
@@ -28,9 +38,12 @@
           <a href="categories.html">Kategoriler</a>
           <a href="contact.html" class="active">İletişim</a>
         </nav>
-        <a class="button primary" href="https://wa.me/905555555555" target="_blank" rel="noreferrer">
-          WhatsApp
-        </a>
+        <div class="header-actions">
+          <a class="button ghost" href="contact.html">Katalog İste</a>
+          <a class="button primary" href="https://wa.me/905555555555" target="_blank" rel="noreferrer">
+            WhatsApp
+          </a>
+        </div>
       </div>
     </header>
 
@@ -40,8 +53,8 @@
           <p class="eyebrow">İletişim</p>
           <h1>Ürün kataloğu ve fiyat için ulaşın</h1>
           <p class="muted">
-            Sizin için uygun ürün listesini hızla hazırlıyoruz. WhatsApp veya e-posta
-            ile bize ulaşın.
+            İhtiyacınıza uygun ürün listesini hızla hazırlıyoruz. WhatsApp veya e-posta
+            üzerinden size dönüş sağlıyoruz.
           </p>
           <div class="contact-actions">
             <a class="button primary" href="https://wa.me/905555555555" target="_blank" rel="noreferrer">
@@ -52,7 +65,7 @@
           <div class="contact-info">
             <p><strong>Telefon:</strong> +90 555 555 55 55</p>
             <p><strong>E-posta:</strong> merhaba@odsan.com</p>
-            <p><strong>Çalışma:</strong> Hafta içi 09:00 - 18:00</p>
+            <p><strong>Adres:</strong> İstanbul, Türkiye</p>
           </div>
         </div>
         <form class="contact-form">
@@ -63,6 +76,10 @@
           <label>
             E-posta
             <input type="email" name="email" placeholder="ornek@mail.com" />
+          </label>
+          <label>
+            Ürün/Kategori
+            <input type="text" name="category" placeholder="Örn. Akıllı Ev" />
           </label>
           <label>
             Mesaj
@@ -76,7 +93,10 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <p>Odsan Elektronik • 2024</p>
+        <div>
+          <p class="footer-brand">Odsan Elektronik</p>
+          <p class="muted">Elektronik ürünlerde güvenilir tedarik.</p>
+        </div>
         <div class="footer-links">
           <a href="products.html">Ürünler</a>
           <a href="categories.html">Kategoriler</a>

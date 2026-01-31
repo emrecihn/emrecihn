@@ -13,10 +13,20 @@
     />
   </head>
   <body>
+    <div class="top-bar">
+      <div class="container top-bar-content">
+        <span>⚡ Ürün kataloğu hazır</span>
+        <span>🧾 Kurumsal teklif</span>
+        <a href="mailto:merhaba@odsan.com">merhaba@odsan.com</a>
+      </div>
+    </div>
+
     <header class="site-header">
       <div class="container header-content">
         <div class="brand">
-          <span class="brand-mark">O</span>
+          <div class="brand-logo">
+            <span class="brand-mark">O</span>
+          </div>
           <div>
             <p class="brand-name">Odsan Elektronik</p>
             <p class="brand-tagline">Ürün vitrini</p>
@@ -28,7 +38,10 @@
           <a href="categories.html">Kategoriler</a>
           <a href="contact.html">İletişim</a>
         </nav>
-        <a class="button primary" href="contact.html">Teklif Al</a>
+        <div class="header-actions">
+          <a class="button ghost" href="contact.html">Katalog İste</a>
+          <a class="button primary" href="contact.html">Teklif Al</a>
+        </div>
       </div>
     </header>
 
@@ -40,8 +53,8 @@
             <h1>Tüm ürünler</h1>
           </div>
           <p class="muted">
-            Ürün kartları JavaScript ile otomatik oluşturulur. Fiyat için WhatsApp veya
-            e-posta ile iletişime geçebilirsiniz.
+            Ürün kartları JavaScript ile otomatik oluşturulur. Fiyat ve stok bilgisi için
+            WhatsApp veya e-posta ile iletişime geçebilirsiniz.
           </p>
         </div>
         <div id="product-grid" class="product-grid"></div>
@@ -50,7 +63,10 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <p>Odsan Elektronik • 2024</p>
+        <div>
+          <p class="footer-brand">Odsan Elektronik</p>
+          <p class="muted">Elektronik ürünlerde güvenilir tedarik.</p>
+        </div>
         <div class="footer-links">
           <a href="categories.html">Kategoriler</a>
           <a href="contact.html">İletişim</a>

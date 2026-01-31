@@ -5,6 +5,7 @@ const products = [
     description: "Uzaktan kontrol, zamanlayıcı desteği.",
     category: "Akıllı Ev",
     badge: "Yeni",
+    sku: "ODSN-AP100",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const products = [
     description: "Güçlü bas, kompakt tasarım.",
     category: "Ses",
     badge: "Popüler",
+    sku: "ODSN-BH220",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const products = [
     description: "Hızlı şarj, çift USB çıkışı.",
     category: "Güç",
     badge: "Stokta",
+    sku: "ODSN-PB420",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const products = [
     description: "Gece görüş, mobil bildirim.",
     category: "Güvenlik",
     badge: "Kurulum",
+    sku: "ODSN-WK700",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const products = [
     description: "Gürültü azaltma, 30 saat pil.",
     category: "Ses",
     badge: "Yeni",
+    sku: "ODSN-KK310",
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const products = [
     description: "Kapı/pencere ve hareket algılama.",
     category: "Akıllı Ev",
     badge: "Set",
+    sku: "ODSN-AS510",
   },
 ];
 
@@ -49,13 +55,19 @@ const createCard = (item) => {
   const card = document.createElement("article");
   card.className = "product-card";
   card.innerHTML = `
-    <h3>${item.name}</h3>
+    <div class="card-head">
+      <h3>${item.name}</h3>
+      <span class="pill">${item.badge}</span>
+    </div>
     <p>${item.description}</p>
     <div class="product-meta">
       <span>${item.category}</span>
-      <span>${item.badge}</span>
+      <span>${item.sku}</span>
     </div>
-    <a class="link" href="contact.html">Fiyat sor</a>
+    <div class="card-actions">
+      <a class="link" href="contact.html">Fiyat sor</a>
+      <a class="link muted" href="contact.html">Detay iste</a>
+    </div>
   `;
   return card;
 };
@@ -67,7 +79,10 @@ const renderFeatured = () => {
     const mini = document.createElement("div");
     mini.className = "mini-card";
     mini.innerHTML = `
-      <p class="mini-title">${item.name}</p>
+      <div>
+        <p class="mini-title">${item.name}</p>
+        <span class="mini-meta">${item.sku}</span>
+      </div>
       <span class="mini-badge">${item.category}</span>
     `;
     featuredGrid.appendChild(mini);
